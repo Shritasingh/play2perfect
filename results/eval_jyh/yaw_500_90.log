@@ -1,0 +1,158 @@
+
+===== evaluating tight_insertion =====
+2026-11-18T19:20:39Z [182ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libMaterialXRenderHw.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-18T19:20:39Z [190ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libMaterialXRenderGlsl.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-18T19:20:39Z [197ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libusd_usdBakeMtlx.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-18T19:20:39Z [305ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.iray.libs-0.0.0+69cbf6ad.lx64.r/bin/iray/libneuray.so. Error: libGLU.so.1: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+cat: '/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor': No such file or directory
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+cat: '/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor': No such file or directory
+[WARN][AppLauncher]: There are no arguments attached to the ArgumentParser object. If you have your own arguments, please load your own arguments before calling the `AppLauncher.add_app_launcher_args` method. This allows the method to check the validity of the arguments and perform checks for argument names.
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaaclab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261118_192039.log
+2026-11-18T19:20:39Z [127ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-18T19:20:39Z [426ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-11-18T19:20:40Z [634ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-11-18T19:20:40Z [644ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 595.112.07    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA L40S                      | Yes: 0 |     | 46068   MB | 10de      | 0          |
+|     |                                  |        |     |            | 26b9      | 1d390b0d.. |
+|     |                                  |        |     |            | 30        |            |
+|=============================================================================================|
+| OS: 24.04.5 LTS (Noble Numbat) ubuntu, Version: 24.04.5, Kernel: 7.0.0-1014-aws
+| Processor: AMD EPYC 7R13 Processor
+| Cores: 4 | Logical Cores: 8
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 63422 | Free Memory: 59795
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-18T19:20:43Z [4,108ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-11-18T19:20:43Z [4,110ms] [Warning] [gpu.foundation.plugin] PCIe link width current (8) and maximum (16) for device 0 don't match.
+[INFO]: Parsing configuration from: isaacsimenvs.tasks.precise_assembly.precise_assembly_env_cfg:PreciseAssemblyEnvCfg
+[custom] hole_yaw_range_deg = 90.0
+2026-11-18T19:20:44Z [5,447ms] [Warning] [isaaclab.envs.direct_rl_env] Seed not set for the environment. The environment creation may not be deterministic.
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-11-18_19-20-44.log[0m
+[36m======================================================================================[0m
+
+[33m19:20:44 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : None
+	Physics step-size     : 0.00833333333
+	Rendering step-size   : 0.01666666666
+	Environment step-size : 0.01666666666
+[scene_utils][+0.00s] peg-in-hole setup start num_envs=500
+2026-11-18T19:20:44Z [5,559ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-18T19:20:44Z [5,559ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 595.112.07    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA L40S                      | Yes: 0 |     | 46068   MB | 10de      | 0          |
+|     |                                  |        |     |            | 26b9      | 1d390b0d.. |
+|     |                                  |        |     |            | 30        |            |
+|=============================================================================================|
+| OS: 24.04.5 LTS (Noble Numbat) ubuntu, Version: 24.04.5, Kernel: 7.0.0-1014-aws
+| Processor: AMD EPYC 7R13 Processor
+| Cores: 4 | Logical Cores: 8
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 63422 | Free Memory: 59540
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-18T19:20:45Z [6,113ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-11-18T19:20:45Z [6,114ms] [Warning] [gpu.foundation.plugin] PCIe link width current (8) and maximum (16) for device 0 don't match.
+2026-11-18T19:20:45Z [6,342ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-18T19:20:45Z [6,342ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-18T19:20:45Z [6,361ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-18T19:20:45Z [6,361ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-18T19:20:45Z [6,367ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-18T19:20:45Z [6,367ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-18T19:20:45Z [6,379ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-18T19:20:45Z [6,379ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-18T19:20:45Z [6,381ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-18T19:20:45Z [6,381ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-18T19:20:45Z [6,382ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-18T19:20:45Z [6,382ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-18T19:20:46Z [6,764ms] [Warning] [omni.graph.visualization.nodes._impl.extension] No Viewport Window to add omni.graph.visualization.nodes-2.1.3 scene to
+2026-11-18T19:20:46Z [6,940ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-18T19:20:46Z [6,940ms] [Warning] [isaacsim.asset.importer.urdf] link left_thumb_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_thumb_elastomer
+2026-11-18T19:20:46Z [6,940ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-18T19:20:46Z [6,940ms] [Warning] [isaacsim.asset.importer.urdf] link left_thumb_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_thumb_DP
+2026-11-18T19:20:46Z [6,940ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-18T19:20:46Z [6,940ms] [Warning] [isaacsim.asset.importer.urdf] link left_index_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_index_elastomer
+2026-11-18T19:20:46Z [6,940ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-18T19:20:46Z [6,940ms] [Warning] [isaacsim.asset.importer.urdf] link left_index_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_index_DP
+2026-11-18T19:20:46Z [6,940ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-18T19:20:46Z [6,940ms] [Warning] [isaacsim.asset.importer.urdf] link left_middle_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_middle_elastomer
+2026-11-18T19:20:46Z [6,940ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-18T19:20:46Z [6,941ms] [Warning] [isaacsim.asset.importer.urdf] link left_middle_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_middle_DP
+2026-11-18T19:20:46Z [6,941ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-18T19:20:46Z [6,941ms] [Warning] [isaacsim.asset.importer.urdf] link left_ring_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_ring_elastomer
+2026-11-18T19:20:46Z [6,941ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-18T19:20:46Z [6,941ms] [Warning] [isaacsim.asset.importer.urdf] link left_ring_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_ring_DP
+2026-11-18T19:20:46Z [6,941ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-18T19:20:46Z [6,941ms] [Warning] [isaacsim.asset.importer.urdf] link left_pinky_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_pinky_elastomer
+2026-11-18T19:20:46Z [6,941ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-18T19:20:46Z [6,941ms] [Warning] [isaacsim.asset.importer.urdf] link left_pinky_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_pinky_DP
+2026-11-18T19:20:46Z [6,941ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-18T19:20:46Z [6,941ms] [Warning] [isaacsim.asset.importer.urdf] link left_hand_C_MC has body properties (mass, inertia, or collisions) and is being merged into sharpa_mount
+2026-11-18T19:20:46Z [6,941ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-18T19:20:46Z [6,941ms] [Warning] [isaacsim.asset.importer.urdf] link sharpa_mount has body properties (mass, inertia, or collisions) and is being merged into iiwa14_link_ee
+2026-11-18T19:20:46Z [6,941ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-18T19:20:46Z [6,941ms] [Warning] [isaacsim.asset.importer.urdf] link iiwa14_link_ee has body properties (mass, inertia, or collisions) and is being merged into iiwa14_link_7
+[scene_utils][+2.35s] converted object/hole/table URDFs
+[scene_utils][+5.77s] spawned robot/table/hole/object/goalviz
+[scene_utils][+6.08s] registered assets with scene
+[INFO]: Time taken for scene creation : 6.145485 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 500
+	Environment spacing   : 1.2
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 11.558370 seconds
+[INFO]: Completed setting up the environment...
+[scene_utils][+0.05s] applied PhysX material properties
+[PreciseAssemblyEnv] problem=tight_insertion object=lpeg_matchedmass goals=2 (prelude=0, tail=2) goal_mode=preInsertAndFinal random_goal_fraction=0.0 insertion_success_tolerance=0.01
+[INFO]: Parsing configuration from: /home/ubuntu/play2perfect/isaacsimenvs/cfg/train/PreciseAssemblySAPG.yaml
+self.seed = 42
+[BasePlayer] Creating regular env:  rlgpu
+{'observation_space': Box(-10.0, 10.0, (140,), float32), 'action_space': Box(-1.0, 1.0, (29,), float32), 'agents': 1, 'value_size': 1}
+build mlp: 1024
+RunningMeanStd:  (1,)
+RunningMeanStd:  (140,)
+=> loading checkpoint 'pretrained_assembly/tight_insertion/model.pth'
+[33m19:21:03 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m19:21:08 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m19:21:13 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m19:21:18 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m19:21:23 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m19:21:28 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m19:21:33 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+RESULT_JSON {"problem": "tight_insertion", "checkpoint": "pretrained_assembly/tight_insertion/model.pth", "num_envs": 500, "n_first_episodes": 443, "n_unstable_init": 57, "success_rate": 0.5079007148742676, "mean_goal_ratio": 0.5948081612586975, "retract_rate": 0.5079007148742676}
+
+======================================================================================
+problem                        trials  bad_init   success  goal_ratio   retract
+--------------------------------------------------------------------------------------
+tight_insertion                   443        57     50.8%       59.5%     50.8%
+======================================================================================
+trials = valid first episodes; bad_init = discarded unstable-init starts;
+success = first episode reached all subgoals (over valid trials).

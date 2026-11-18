@@ -156,6 +156,7 @@ _RELEASED_PROBLEMS = {
     # Everyday objects at real-world scale.
     "fork_insertion": "fork.tol1mm",
     "plug_insertion": "plug.tol0p5mm",
+    "pencil_insertion": "pencil.tol0p5mm",
 }
 
 _missing = [k for k in _RELEASED_PROBLEMS.values() if k not in PROBLEM_REGISTRY]

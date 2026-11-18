@@ -1,0 +1,1133 @@
+
+===== evaluating tight_insertion =====
+2026-11-13T06:21:04Z [173ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libMaterialXRenderHw.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-13T06:21:04Z [181ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libMaterialXRenderGlsl.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-13T06:21:04Z [188ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libusd_usdBakeMtlx.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-13T06:21:04Z [297ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.iray.libs-0.0.0+69cbf6ad.lx64.r/bin/iray/libneuray.so. Error: libGLU.so.1: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+cat: '/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor': No such file or directory
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+cat: '/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor': No such file or directory
+[WARN][AppLauncher]: There are no arguments attached to the ArgumentParser object. If you have your own arguments, please load your own arguments before calling the `AppLauncher.add_app_launcher_args` method. This allows the method to check the validity of the arguments and perform checks for argument names.
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaaclab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261113_062104.log
+2026-11-13T06:21:04Z [120ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-13T06:21:04Z [419ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-11-13T06:21:04Z [617ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-11-13T06:21:04Z [627ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 595.112.07    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA L40S                      | Yes: 0 |     | 46068   MB | 10de      | 0          |
+|     |                                  |        |     |            | 26b9      | 0217ae23.. |
+|     |                                  |        |     |            | 30        |            |
+|=============================================================================================|
+| OS: 24.04.5 LTS (Noble Numbat) ubuntu, Version: 24.04.5, Kernel: 7.0.0-1014-aws
+| Processor: AMD EPYC 7R13 Processor
+| Cores: 4 | Logical Cores: 8
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 63422 | Free Memory: 59882
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-13T06:21:08Z [4,118ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-11-13T06:21:08Z [4,119ms] [Warning] [gpu.foundation.plugin] PCIe link width current (8) and maximum (16) for device 0 don't match.
+[INFO]: Parsing configuration from: isaacsimenvs.tasks.precise_assembly.precise_assembly_env_cfg:PreciseAssemblyEnvCfg
+2026-11-13T06:21:09Z [5,445ms] [Warning] [isaaclab.envs.direct_rl_env] Seed not set for the environment. The environment creation may not be deterministic.
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-11-13_06-21-09.log[0m
+[36m======================================================================================[0m
+
+[33m06:21:09 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : None
+	Physics step-size     : 0.00833333333
+	Rendering step-size   : 0.01666666666
+	Environment step-size : 0.01666666666
+[scene_utils][+0.00s] peg-in-hole setup start num_envs=500
+2026-11-13T06:21:09Z [5,562ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:21:09Z [5,562ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 595.112.07    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA L40S                      | Yes: 0 |     | 46068   MB | 10de      | 0          |
+|     |                                  |        |     |            | 26b9      | 0217ae23.. |
+|     |                                  |        |     |            | 30        |            |
+|=============================================================================================|
+| OS: 24.04.5 LTS (Noble Numbat) ubuntu, Version: 24.04.5, Kernel: 7.0.0-1014-aws
+| Processor: AMD EPYC 7R13 Processor
+| Cores: 4 | Logical Cores: 8
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 63422 | Free Memory: 59658
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-13T06:21:10Z [6,112ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-11-13T06:21:10Z [6,112ms] [Warning] [gpu.foundation.plugin] PCIe link width current (8) and maximum (16) for device 0 don't match.
+2026-11-13T06:21:10Z [6,340ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:21:10Z [6,340ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:21:10Z [6,358ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:21:10Z [6,358ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:21:10Z [6,365ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:21:10Z [6,365ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:21:10Z [6,376ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:21:10Z [6,376ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:21:10Z [6,377ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:21:10Z [6,377ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:21:10Z [6,379ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:21:10Z [6,379ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:21:11Z [6,756ms] [Warning] [omni.graph.visualization.nodes._impl.extension] No Viewport Window to add omni.graph.visualization.nodes-2.1.3 scene to
+2026-11-13T06:21:11Z [6,928ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] link left_thumb_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_thumb_elastomer
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] link left_thumb_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_thumb_DP
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] link left_index_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_index_elastomer
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] link left_index_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_index_DP
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] link left_middle_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_middle_elastomer
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] link left_middle_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_middle_DP
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] link left_ring_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_ring_elastomer
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] link left_ring_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_ring_DP
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] link left_pinky_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_pinky_elastomer
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] link left_pinky_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_pinky_DP
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] link left_hand_C_MC has body properties (mass, inertia, or collisions) and is being merged into sharpa_mount
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] link sharpa_mount has body properties (mass, inertia, or collisions) and is being merged into iiwa14_link_ee
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:11Z [6,929ms] [Warning] [isaacsim.asset.importer.urdf] link iiwa14_link_ee has body properties (mass, inertia, or collisions) and is being merged into iiwa14_link_7
+[scene_utils][+2.33s] converted object/hole/table URDFs
+[scene_utils][+5.77s] spawned robot/table/hole/object/goalviz
+[scene_utils][+6.05s] registered assets with scene
+[INFO]: Time taken for scene creation : 6.125117 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 500
+	Environment spacing   : 1.2
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 11.385675 seconds
+[INFO]: Completed setting up the environment...
+[scene_utils][+0.05s] applied PhysX material properties
+[PreciseAssemblyEnv] problem=tight_insertion object=lpeg_matchedmass goals=2 (prelude=0, tail=2) goal_mode=preInsertAndFinal random_goal_fraction=0.0 insertion_success_tolerance=0.01
+[INFO]: Parsing configuration from: /home/ubuntu/play2perfect/isaacsimenvs/cfg/train/PreciseAssemblySAPG.yaml
+self.seed = 42
+[BasePlayer] Creating regular env:  rlgpu
+{'observation_space': Box(-10.0, 10.0, (140,), float32), 'action_space': Box(-1.0, 1.0, (29,), float32), 'agents': 1, 'value_size': 1}
+build mlp: 1024
+RunningMeanStd:  (1,)
+RunningMeanStd:  (140,)
+=> loading checkpoint '/home/ubuntu/play2perfect/pretrained_assembly/tight_insertion/model.pth'
+[33m06:21:27 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:21:32 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:21:38 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:21:43 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+RESULT_JSON {"problem": "tight_insertion", "checkpoint": "/home/ubuntu/play2perfect/pretrained_assembly/tight_insertion/model.pth", "num_envs": 500, "n_first_episodes": 443, "n_unstable_init": 57, "success_rate": 0.97516930103302, "mean_goal_ratio": 0.97516930103302, "retract_rate": 0.97516930103302}
+
+===== evaluating beam_assembly_step1 =====
+2026-11-13T06:21:47Z [170ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libMaterialXRenderHw.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-13T06:21:47Z [179ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libMaterialXRenderGlsl.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-13T06:21:47Z [186ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libusd_usdBakeMtlx.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-13T06:21:48Z [293ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.iray.libs-0.0.0+69cbf6ad.lx64.r/bin/iray/libneuray.so. Error: libGLU.so.1: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+cat: '/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor': No such file or directory
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+cat: '/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor': No such file or directory
+[WARN][AppLauncher]: There are no arguments attached to the ArgumentParser object. If you have your own arguments, please load your own arguments before calling the `AppLauncher.add_app_launcher_args` method. This allows the method to check the validity of the arguments and perform checks for argument names.
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaaclab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261113_062147.log
+2026-11-13T06:21:47Z [120ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-13T06:21:48Z [410ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-11-13T06:21:48Z [610ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-11-13T06:21:48Z [620ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 595.112.07    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA L40S                      | Yes: 0 |     | 46068   MB | 10de      | 0          |
+|     |                                  |        |     |            | 26b9      | 0217ae23.. |
+|     |                                  |        |     |            | 30        |            |
+|=============================================================================================|
+| OS: 24.04.5 LTS (Noble Numbat) ubuntu, Version: 24.04.5, Kernel: 7.0.0-1014-aws
+| Processor: AMD EPYC 7R13 Processor
+| Cores: 4 | Logical Cores: 8
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 63422 | Free Memory: 59897
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-13T06:21:51Z [4,044ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-11-13T06:21:51Z [4,045ms] [Warning] [gpu.foundation.plugin] PCIe link width current (8) and maximum (16) for device 0 don't match.
+[INFO]: Parsing configuration from: isaacsimenvs.tasks.precise_assembly.precise_assembly_env_cfg:PreciseAssemblyEnvCfg
+2026-11-13T06:21:53Z [5,380ms] [Warning] [isaaclab.envs.direct_rl_env] Seed not set for the environment. The environment creation may not be deterministic.
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-11-13_06-21-53.log[0m
+[36m======================================================================================[0m
+
+[33m06:21:53 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : None
+	Physics step-size     : 0.00833333333
+	Rendering step-size   : 0.01666666666
+	Environment step-size : 0.01666666666
+[scene_utils][+0.00s] peg-in-hole setup start num_envs=500
+2026-11-13T06:21:53Z [5,502ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:21:53Z [5,502ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 595.112.07    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA L40S                      | Yes: 0 |     | 46068   MB | 10de      | 0          |
+|     |                                  |        |     |            | 26b9      | 0217ae23.. |
+|     |                                  |        |     |            | 30        |            |
+|=============================================================================================|
+| OS: 24.04.5 LTS (Noble Numbat) ubuntu, Version: 24.04.5, Kernel: 7.0.0-1014-aws
+| Processor: AMD EPYC 7R13 Processor
+| Cores: 4 | Logical Cores: 8
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 63422 | Free Memory: 59680
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-13T06:21:53Z [6,085ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-11-13T06:21:53Z [6,085ms] [Warning] [gpu.foundation.plugin] PCIe link width current (8) and maximum (16) for device 0 don't match.
+2026-11-13T06:21:54Z [6,314ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:21:54Z [6,314ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:21:54Z [6,333ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:21:54Z [6,333ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:21:54Z [6,339ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:21:54Z [6,339ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:21:54Z [6,350ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:21:54Z [6,350ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:21:54Z [6,352ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:21:54Z [6,352ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:21:54Z [6,353ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:21:54Z [6,353ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:21:54Z [6,733ms] [Warning] [omni.graph.visualization.nodes._impl.extension] No Viewport Window to add omni.graph.visualization.nodes-2.1.3 scene to
+2026-11-13T06:21:54Z [6,787ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:54Z [6,787ms] [Warning] [isaacsim.asset.importer.urdf] link body_link has body properties (mass, inertia, or collisions) and is being merged into base_link
+2026-11-13T06:21:54Z [6,787ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:54Z [6,787ms] [Warning] [isaacsim.asset.importer.urdf] link tip_link has body properties (mass, inertia, or collisions) and is being merged into base_link
+[scene_utils] applied URDF SDF collision markers to 1 prims in beam_3x_2_matchedmass_sdf_hybrid_physics.usd (mesh_2_tip:1)
+2026-11-13T06:21:54Z [6,991ms] [Warning] [isaacsim.asset.importer.urdf] No mass specified for link plate
+[scene_utils] applied URDF SDF collision markers to 1 prims in part_2_sdf_hybrid_physics.usd (mesh_6_hole_patch_for_part_2:1)
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] link left_thumb_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_thumb_elastomer
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] link left_thumb_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_thumb_DP
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] link left_index_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_index_elastomer
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] link left_index_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_index_DP
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] link left_middle_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_middle_elastomer
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] link left_middle_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_middle_DP
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] link left_ring_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_ring_elastomer
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] link left_ring_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_ring_DP
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] link left_pinky_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_pinky_elastomer
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] link left_pinky_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_pinky_DP
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] link left_hand_C_MC has body properties (mass, inertia, or collisions) and is being merged into sharpa_mount
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] link sharpa_mount has body properties (mass, inertia, or collisions) and is being merged into iiwa14_link_ee
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:21:54Z [7,041ms] [Warning] [isaacsim.asset.importer.urdf] link iiwa14_link_ee has body properties (mass, inertia, or collisions) and is being merged into iiwa14_link_7
+[scene_utils][+2.50s] converted object/hole/table URDFs
+[scene_utils][+6.55s] spawned robot/table/hole/object/goalviz
+[scene_utils][+6.84s] registered assets with scene
+[INFO]: Time taken for scene creation : 6.903579 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 500
+	Environment spacing   : 1.2
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 13.465691 seconds
+[INFO]: Completed setting up the environment...
+[scene_utils][+0.06s] applied PhysX material properties
+[PreciseAssemblyEnv] problem=beam_assembly_step1 object=beam_3x_2_matchedmass_sdf_hybrid goals=2 (prelude=0, tail=2) goal_mode=preInsertAndFinal random_goal_fraction=0.0 insertion_success_tolerance=0.01
+[INFO]: Parsing configuration from: /home/ubuntu/play2perfect/isaacsimenvs/cfg/train/PreciseAssemblySAPG.yaml
+self.seed = 42
+[BasePlayer] Creating regular env:  rlgpu
+{'observation_space': Box(-10.0, 10.0, (140,), float32), 'action_space': Box(-1.0, 1.0, (29,), float32), 'agents': 1, 'value_size': 1}
+build mlp: 1024
+RunningMeanStd:  (1,)
+RunningMeanStd:  (140,)
+=> loading checkpoint '/home/ubuntu/play2perfect/pretrained_assembly/beam_assembly_step1/model.pth'
+[33m06:22:14 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:22:19 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:22:24 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:22:29 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:22:34 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+RESULT_JSON {"problem": "beam_assembly_step1", "checkpoint": "/home/ubuntu/play2perfect/pretrained_assembly/beam_assembly_step1/model.pth", "num_envs": 500, "n_first_episodes": 469, "n_unstable_init": 31, "success_rate": 0.9765458703041077, "mean_goal_ratio": 0.9797441363334656, "retract_rate": 0.9765458703041077}
+
+===== evaluating beam_assembly_step2 =====
+2026-11-13T06:22:40Z [173ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libMaterialXRenderHw.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-13T06:22:40Z [181ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libMaterialXRenderGlsl.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-13T06:22:40Z [188ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libusd_usdBakeMtlx.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-13T06:22:40Z [296ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.iray.libs-0.0.0+69cbf6ad.lx64.r/bin/iray/libneuray.so. Error: libGLU.so.1: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+cat: '/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor': No such file or directory
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+cat: '/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor': No such file or directory
+[WARN][AppLauncher]: There are no arguments attached to the ArgumentParser object. If you have your own arguments, please load your own arguments before calling the `AppLauncher.add_app_launcher_args` method. This allows the method to check the validity of the arguments and perform checks for argument names.
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaaclab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261113_062240.log
+2026-11-13T06:22:40Z [120ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-13T06:22:40Z [413ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-11-13T06:22:40Z [625ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-11-13T06:22:40Z [634ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 595.112.07    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA L40S                      | Yes: 0 |     | 46068   MB | 10de      | 0          |
+|     |                                  |        |     |            | 26b9      | 0217ae23.. |
+|     |                                  |        |     |            | 30        |            |
+|=============================================================================================|
+| OS: 24.04.5 LTS (Noble Numbat) ubuntu, Version: 24.04.5, Kernel: 7.0.0-1014-aws
+| Processor: AMD EPYC 7R13 Processor
+| Cores: 4 | Logical Cores: 8
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 63422 | Free Memory: 59896
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-13T06:22:44Z [4,125ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-11-13T06:22:44Z [4,126ms] [Warning] [gpu.foundation.plugin] PCIe link width current (8) and maximum (16) for device 0 don't match.
+[INFO]: Parsing configuration from: isaacsimenvs.tasks.precise_assembly.precise_assembly_env_cfg:PreciseAssemblyEnvCfg
+2026-11-13T06:22:45Z [5,448ms] [Warning] [isaaclab.envs.direct_rl_env] Seed not set for the environment. The environment creation may not be deterministic.
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-11-13_06-22-45.log[0m
+[36m======================================================================================[0m
+
+[33m06:22:45 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : None
+	Physics step-size     : 0.00833333333
+	Rendering step-size   : 0.01666666666
+	Environment step-size : 0.01666666666
+[scene_utils][+0.00s] peg-in-hole setup start num_envs=500
+2026-11-13T06:22:45Z [5,565ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:22:45Z [5,565ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 595.112.07    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA L40S                      | Yes: 0 |     | 46068   MB | 10de      | 0          |
+|     |                                  |        |     |            | 26b9      | 0217ae23.. |
+|     |                                  |        |     |            | 30        |            |
+|=============================================================================================|
+| OS: 24.04.5 LTS (Noble Numbat) ubuntu, Version: 24.04.5, Kernel: 7.0.0-1014-aws
+| Processor: AMD EPYC 7R13 Processor
+| Cores: 4 | Logical Cores: 8
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 63422 | Free Memory: 59641
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-13T06:22:46Z [6,115ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-11-13T06:22:46Z [6,116ms] [Warning] [gpu.foundation.plugin] PCIe link width current (8) and maximum (16) for device 0 don't match.
+2026-11-13T06:22:46Z [6,344ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:22:46Z [6,344ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:22:46Z [6,363ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:22:46Z [6,363ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:22:46Z [6,369ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:22:46Z [6,369ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:22:46Z [6,380ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:22:46Z [6,380ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:22:46Z [6,382ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:22:46Z [6,382ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:22:46Z [6,384ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:22:46Z [6,384ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:22:46Z [6,759ms] [Warning] [omni.graph.visualization.nodes._impl.extension] No Viewport Window to add omni.graph.visualization.nodes-2.1.3 scene to
+2026-11-13T06:22:46Z [6,813ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:22:46Z [6,813ms] [Warning] [isaacsim.asset.importer.urdf] link body_link has body properties (mass, inertia, or collisions) and is being merged into base_link
+2026-11-13T06:22:46Z [6,813ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:22:46Z [6,813ms] [Warning] [isaacsim.asset.importer.urdf] link tip_link has body properties (mass, inertia, or collisions) and is being merged into base_link
+[scene_utils] applied URDF SDF collision markers to 1 prims in beam_3x_0_matchedmass_sdf_hybrid_physics.usd (mesh_0_tip:1)
+2026-11-13T06:22:47Z [6,933ms] [Warning] [isaacsim.asset.importer.urdf] No mass specified for link plate
+[scene_utils] applied URDF SDF collision markers to 1 prims in part_0_sdf_hybrid_physics.usd (mesh_2_hole_patch_for_part_0:1)
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] link left_thumb_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_thumb_elastomer
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] link left_thumb_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_thumb_DP
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] link left_index_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_index_elastomer
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] link left_index_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_index_DP
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] link left_middle_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_middle_elastomer
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] link left_middle_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_middle_DP
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] link left_ring_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_ring_elastomer
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] link left_ring_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_ring_DP
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] link left_pinky_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_pinky_elastomer
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] link left_pinky_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_pinky_DP
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] link left_hand_C_MC has body properties (mass, inertia, or collisions) and is being merged into sharpa_mount
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] link sharpa_mount has body properties (mass, inertia, or collisions) and is being merged into iiwa14_link_ee
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:22:47Z [6,979ms] [Warning] [isaacsim.asset.importer.urdf] link iiwa14_link_ee has body properties (mass, inertia, or collisions) and is being merged into iiwa14_link_7
+[scene_utils][+2.37s] converted object/hole/table URDFs
+[scene_utils][+5.91s] spawned robot/table/hole/object/goalviz
+[scene_utils][+6.21s] registered assets with scene
+[INFO]: Time taken for scene creation : 6.273101 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 500
+	Environment spacing   : 1.2
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 12.251792 seconds
+[INFO]: Completed setting up the environment...
+[scene_utils][+0.04s] applied PhysX material properties
+[PreciseAssemblyEnv] problem=beam_assembly_step2 object=beam_3x_0_matchedmass_sdf_hybrid goals=2 (prelude=0, tail=2) goal_mode=preInsertAndFinal random_goal_fraction=0.0 insertion_success_tolerance=0.01
+[INFO]: Parsing configuration from: /home/ubuntu/play2perfect/isaacsimenvs/cfg/train/PreciseAssemblySAPG.yaml
+self.seed = 42
+[BasePlayer] Creating regular env:  rlgpu
+{'observation_space': Box(-10.0, 10.0, (140,), float32), 'action_space': Box(-1.0, 1.0, (29,), float32), 'agents': 1, 'value_size': 1}
+build mlp: 1024
+RunningMeanStd:  (1,)
+RunningMeanStd:  (140,)
+=> loading checkpoint '/home/ubuntu/play2perfect/pretrained_assembly/beam_assembly_step2/model.pth'
+[33m06:23:04 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:23:09 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:23:14 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:23:20 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:23:25 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:23:30 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:23:35 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:23:40 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:23:45 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:23:50 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+RESULT_JSON {"problem": "beam_assembly_step2", "checkpoint": "/home/ubuntu/play2perfect/pretrained_assembly/beam_assembly_step2/model.pth", "num_envs": 500, "n_first_episodes": 436, "n_unstable_init": 64, "success_rate": 0.9105504155158997, "mean_goal_ratio": 0.9139907956123352, "retract_rate": 0.9105504155158997}
+
+===== evaluating screwing =====
+2026-11-13T06:23:53Z [175ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libMaterialXRenderHw.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-13T06:23:53Z [183ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libMaterialXRenderGlsl.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-13T06:23:53Z [190ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libusd_usdBakeMtlx.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-13T06:23:53Z [299ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.iray.libs-0.0.0+69cbf6ad.lx64.r/bin/iray/libneuray.so. Error: libGLU.so.1: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+cat: '/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor': No such file or directory
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+cat: '/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor': No such file or directory
+[WARN][AppLauncher]: There are no arguments attached to the ArgumentParser object. If you have your own arguments, please load your own arguments before calling the `AppLauncher.add_app_launcher_args` method. This allows the method to check the validity of the arguments and perform checks for argument names.
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaaclab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261113_062353.log
+2026-11-13T06:23:53Z [124ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-13T06:23:53Z [421ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-11-13T06:23:53Z [627ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-11-13T06:23:53Z [637ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 595.112.07    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA L40S                      | Yes: 0 |     | 46068   MB | 10de      | 0          |
+|     |                                  |        |     |            | 26b9      | 0217ae23.. |
+|     |                                  |        |     |            | 30        |            |
+|=============================================================================================|
+| OS: 24.04.5 LTS (Noble Numbat) ubuntu, Version: 24.04.5, Kernel: 7.0.0-1014-aws
+| Processor: AMD EPYC 7R13 Processor
+| Cores: 4 | Logical Cores: 8
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 63422 | Free Memory: 59896
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-13T06:23:57Z [4,134ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-11-13T06:23:57Z [4,135ms] [Warning] [gpu.foundation.plugin] PCIe link width current (8) and maximum (16) for device 0 don't match.
+[INFO]: Parsing configuration from: isaacsimenvs.tasks.precise_assembly.precise_assembly_env_cfg:PreciseAssemblyEnvCfg
+2026-11-13T06:23:58Z [5,457ms] [Warning] [isaaclab.envs.direct_rl_env] Seed not set for the environment. The environment creation may not be deterministic.
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-11-13_06-23-58.log[0m
+[36m======================================================================================[0m
+
+[33m06:23:58 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : None
+	Physics step-size     : 0.00833333333
+	Rendering step-size   : 0.01666666666
+	Environment step-size : 0.01666666666
+[scene_utils][+0.00s] peg-in-hole setup start num_envs=500
+2026-11-13T06:23:58Z [5,571ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:23:58Z [5,571ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 595.112.07    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA L40S                      | Yes: 0 |     | 46068   MB | 10de      | 0          |
+|     |                                  |        |     |            | 26b9      | 0217ae23.. |
+|     |                                  |        |     |            | 30        |            |
+|=============================================================================================|
+| OS: 24.04.5 LTS (Noble Numbat) ubuntu, Version: 24.04.5, Kernel: 7.0.0-1014-aws
+| Processor: AMD EPYC 7R13 Processor
+| Cores: 4 | Logical Cores: 8
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 63422 | Free Memory: 59661
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-13T06:23:59Z [6,123ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-11-13T06:23:59Z [6,123ms] [Warning] [gpu.foundation.plugin] PCIe link width current (8) and maximum (16) for device 0 don't match.
+2026-11-13T06:23:59Z [6,354ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:23:59Z [6,354ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:23:59Z [6,373ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:23:59Z [6,373ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:23:59Z [6,380ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:23:59Z [6,380ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:23:59Z [6,391ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:23:59Z [6,391ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:23:59Z [6,393ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:23:59Z [6,393ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:23:59Z [6,394ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:23:59Z [6,394ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:23:59Z [6,784ms] [Warning] [omni.graph.visualization.nodes._impl.extension] No Viewport Window to add omni.graph.visualization.nodes-2.1.3 scene to
+2026-11-13T06:23:59Z [6,838ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:23:59Z [6,838ms] [Warning] [isaacsim.asset.importer.urdf] link body_link has body properties (mass, inertia, or collisions) and is being merged into base_link
+2026-11-13T06:23:59Z [6,838ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:23:59Z [6,838ms] [Warning] [isaacsim.asset.importer.urdf] link thread_link has body properties (mass, inertia, or collisions) and is being merged into base_link
+[scene_utils] applied URDF SDF collision markers to 1 prims in square_table_leg4_matchedmass_sdf_hybrid_physics.usd (square_table_leg4_thread:1)
+2026-11-13T06:24:00Z [7,045ms] [Warning] [isaacsim.asset.importer.urdf] No mass specified for link receptive
+[scene_utils] applied URDF SDF collision markers to 1 prims in one_leg_sdf_hybrid_physics.usd (one_leg_hole_detail:1)
+2026-11-13T06:24:00Z [7,123ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:24:00Z [7,123ms] [Warning] [isaacsim.asset.importer.urdf] link left_thumb_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_thumb_elastomer
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] link left_thumb_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_thumb_DP
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] link left_index_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_index_elastomer
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] link left_index_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_index_DP
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] link left_middle_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_middle_elastomer
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] link left_middle_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_middle_DP
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] link left_ring_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_ring_elastomer
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] link left_ring_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_ring_DP
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] link left_pinky_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_pinky_elastomer
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] link left_pinky_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_pinky_DP
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] link left_hand_C_MC has body properties (mass, inertia, or collisions) and is being merged into sharpa_mount
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] link sharpa_mount has body properties (mass, inertia, or collisions) and is being merged into iiwa14_link_ee
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:24:00Z [7,124ms] [Warning] [isaacsim.asset.importer.urdf] link iiwa14_link_ee has body properties (mass, inertia, or collisions) and is being merged into iiwa14_link_7
+[scene_utils][+2.51s] converted object/hole/table URDFs
+[scene_utils][+6.51s] spawned robot/table/hole/object/goalviz
+[scene_utils][+6.81s] registered assets with scene
+[INFO]: Time taken for scene creation : 6.877890 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 500
+	Environment spacing   : 1.2
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 15.336279 seconds
+[INFO]: Completed setting up the environment...
+[scene_utils][+0.05s] applied PhysX material properties
+[PreciseAssemblyEnv] problem=screwing object=furniture_bench_square_table_leg4_matchedmass_sdf_hybrid goals=10 (prelude=0, tail=10) goal_mode=preInsertAndFinal random_goal_fraction=0.0 insertion_success_tolerance=0.005
+[INFO]: Parsing configuration from: /home/ubuntu/play2perfect/isaacsimenvs/cfg/train/PreciseAssemblySAPG.yaml
+self.seed = 42
+[BasePlayer] Creating regular env:  rlgpu
+{'observation_space': Box(-10.0, 10.0, (140,), float32), 'action_space': Box(-1.0, 1.0, (29,), float32), 'agents': 1, 'value_size': 1}
+build mlp: 1024
+RunningMeanStd:  (1,)
+RunningMeanStd:  (140,)
+=> loading checkpoint '/home/ubuntu/play2perfect/pretrained_assembly/screwing/model.pth'
+[33m06:24:21 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:24:26 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:24:31 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:24:36 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:24:42 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:24:47 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:24:52 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:24:57 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:25:03 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:25:08 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:25:13 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:25:19 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:25:24 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:25:29 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:25:35 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:25:40 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:25:45 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:25:51 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:25:56 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:26:01 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:26:07 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:26:12 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:26:17 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:26:22 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:26:28 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:26:33 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:26:38 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:26:44 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:26:49 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:26:54 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:26:59 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:27:04 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:27:09 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:27:14 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:27:20 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:27:25 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:27:30 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:27:35 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:27:40 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:27:45 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:27:50 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:27:55 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:28:01 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:28:06 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:28:11 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:28:16 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:28:21 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:28:26 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:28:31 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:28:36 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:28:41 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:28:46 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:28:51 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:28:57 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:29:02 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:29:07 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:29:12 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:29:17 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:29:22 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:29:28 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:29:33 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:29:38 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:29:43 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:29:48 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:29:53 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:29:59 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:30:04 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:30:09 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:30:15 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:30:20 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:30:25 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:30:30 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:30:35 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:30:40 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:30:46 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:30:51 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:30:56 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:31:01 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:31:07 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:31:12 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:31:17 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:31:22 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:31:27 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:31:33 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:31:38 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:31:43 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:31:49 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:31:54 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:31:59 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:32:04 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:32:10 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:32:15 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:32:20 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:32:25 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:32:31 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:32:36 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:32:41 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:32:46 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:32:51 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:32:56 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:33:02 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:33:07 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:33:12 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:33:17 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:33:23 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:33:28 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:33:33 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:33:38 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:33:44 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:33:49 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:33:54 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:33:59 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:34:05 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:34:10 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:34:15 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:34:20 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:34:26 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:34:31 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:34:37 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:34:42 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:34:47 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:34:52 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:34:57 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:35:03 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:35:08 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:35:13 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:35:18 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:35:23 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:35:28 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:35:34 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:35:39 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:35:44 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:35:50 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:35:55 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:36:00 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:36:05 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:36:10 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:36:16 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:36:21 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:36:26 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:36:31 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:36:36 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:36:41 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:36:46 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:36:52 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:36:57 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:37:02 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:37:07 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:37:13 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:37:18 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:37:23 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:37:29 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:37:34 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:37:39 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:37:45 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:37:50 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:37:55 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:38:01 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:38:06 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:38:11 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:38:16 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:38:22 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:38:27 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:38:32 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:38:38 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:38:43 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:38:48 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:38:53 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:38:58 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:39:03 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:39:08 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:39:14 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:39:19 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:39:24 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:39:29 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:39:34 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:39:39 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:39:44 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:39:50 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:39:55 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:40:00 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:40:05 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:40:11 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:40:16 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:40:21 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:40:26 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:40:31 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:40:36 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:40:41 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:40:47 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:40:52 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:40:57 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:41:02 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:41:07 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:41:13 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:41:18 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:41:23 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:41:28 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:41:33 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:41:39 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:41:44 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:41:49 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:41:54 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:42:00 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:42:05 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:42:10 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:42:16 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:42:21 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:42:26 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:42:32 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:42:37 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:42:42 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:42:47 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:42:53 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+RESULT_JSON {"problem": "screwing", "checkpoint": "/home/ubuntu/play2perfect/pretrained_assembly/screwing/model.pth", "num_envs": 500, "n_first_episodes": 496, "n_unstable_init": 1, "success_rate": 0.21169354021549225, "mean_goal_ratio": 0.5086693167686462, "retract_rate": 0.19153225421905518}
+
+===== evaluating fork_insertion =====
+2026-11-13T06:42:56Z [173ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libMaterialXRenderHw.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-13T06:42:56Z [181ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libMaterialXRenderGlsl.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-13T06:42:56Z [188ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libusd_usdBakeMtlx.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-13T06:42:56Z [298ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.iray.libs-0.0.0+69cbf6ad.lx64.r/bin/iray/libneuray.so. Error: libGLU.so.1: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+cat: '/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor': No such file or directory
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+cat: '/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor': No such file or directory
+[WARN][AppLauncher]: There are no arguments attached to the ArgumentParser object. If you have your own arguments, please load your own arguments before calling the `AppLauncher.add_app_launcher_args` method. This allows the method to check the validity of the arguments and perform checks for argument names.
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaaclab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261113_064256.log
+2026-11-13T06:42:56Z [121ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-13T06:42:57Z [415ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-11-13T06:42:57Z [645ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-11-13T06:42:57Z [655ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 595.112.07    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA L40S                      | Yes: 0 |     | 46068   MB | 10de      | 0          |
+|     |                                  |        |     |            | 26b9      | 0217ae23.. |
+|     |                                  |        |     |            | 30        |            |
+|=============================================================================================|
+| OS: 24.04.5 LTS (Noble Numbat) ubuntu, Version: 24.04.5, Kernel: 7.0.0-1014-aws
+| Processor: AMD EPYC 7R13 Processor
+| Cores: 4 | Logical Cores: 8
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 63422 | Free Memory: 59873
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-13T06:43:00Z [4,116ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-11-13T06:43:00Z [4,117ms] [Warning] [gpu.foundation.plugin] PCIe link width current (8) and maximum (16) for device 0 don't match.
+[INFO]: Parsing configuration from: isaacsimenvs.tasks.precise_assembly.precise_assembly_env_cfg:PreciseAssemblyEnvCfg
+2026-11-13T06:43:02Z [5,440ms] [Warning] [isaaclab.envs.direct_rl_env] Seed not set for the environment. The environment creation may not be deterministic.
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-11-13_06-43-02.log[0m
+[36m======================================================================================[0m
+
+[33m06:43:02 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : None
+	Physics step-size     : 0.00833333333
+	Rendering step-size   : 0.01666666666
+	Environment step-size : 0.01666666666
+[scene_utils][+0.00s] peg-in-hole setup start num_envs=500
+2026-11-13T06:43:02Z [5,552ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:43:02Z [5,552ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 595.112.07    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA L40S                      | Yes: 0 |     | 46068   MB | 10de      | 0          |
+|     |                                  |        |     |            | 26b9      | 0217ae23.. |
+|     |                                  |        |     |            | 30        |            |
+|=============================================================================================|
+| OS: 24.04.5 LTS (Noble Numbat) ubuntu, Version: 24.04.5, Kernel: 7.0.0-1014-aws
+| Processor: AMD EPYC 7R13 Processor
+| Cores: 4 | Logical Cores: 8
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 63422 | Free Memory: 59626
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-13T06:43:02Z [6,111ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-11-13T06:43:02Z [6,112ms] [Warning] [gpu.foundation.plugin] PCIe link width current (8) and maximum (16) for device 0 don't match.
+2026-11-13T06:43:03Z [6,338ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:43:03Z [6,338ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:43:03Z [6,357ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:43:03Z [6,357ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:43:03Z [6,363ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:43:03Z [6,363ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:43:03Z [6,374ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:43:03Z [6,374ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:43:03Z [6,376ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:43:03Z [6,376ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:43:03Z [6,378ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:43:03Z [6,378ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:43:03Z [6,762ms] [Warning] [omni.graph.visualization.nodes._impl.extension] No Viewport Window to add omni.graph.visualization.nodes-2.1.3 scene to
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] link left_thumb_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_thumb_elastomer
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] link left_thumb_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_thumb_DP
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] link left_index_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_index_elastomer
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] link left_index_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_index_DP
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] link left_middle_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_middle_elastomer
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] link left_middle_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_middle_DP
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] link left_ring_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_ring_elastomer
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] link left_ring_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_ring_DP
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] link left_pinky_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_pinky_elastomer
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] link left_pinky_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_pinky_DP
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] link left_hand_C_MC has body properties (mass, inertia, or collisions) and is being merged into sharpa_mount
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] link sharpa_mount has body properties (mass, inertia, or collisions) and is being merged into iiwa14_link_ee
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:43:03Z [7,127ms] [Warning] [isaacsim.asset.importer.urdf] link iiwa14_link_ee has body properties (mass, inertia, or collisions) and is being merged into iiwa14_link_7
+[scene_utils][+2.53s] converted object/hole/table URDFs
+[scene_utils][+6.15s] spawned robot/table/hole/object/goalviz
+[scene_utils][+6.45s] registered assets with scene
+[INFO]: Time taken for scene creation : 6.515079 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 500
+	Environment spacing   : 1.2
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 12.694760 seconds
+[INFO]: Completed setting up the environment...
+[scene_utils][+0.05s] applied PhysX material properties
+[PreciseAssemblyEnv] problem=fork_insertion object=ycb_fork goals=2 (prelude=0, tail=2) goal_mode=preInsertAndFinal random_goal_fraction=0.0 insertion_success_tolerance=0.01
+[INFO]: Parsing configuration from: /home/ubuntu/play2perfect/isaacsimenvs/cfg/train/PreciseAssemblySAPG.yaml
+self.seed = 42
+[BasePlayer] Creating regular env:  rlgpu
+{'observation_space': Box(-10.0, 10.0, (140,), float32), 'action_space': Box(-1.0, 1.0, (29,), float32), 'agents': 1, 'value_size': 1}
+build mlp: 1024
+RunningMeanStd:  (1,)
+RunningMeanStd:  (140,)
+=> loading checkpoint '/home/ubuntu/play2perfect/pretrained_assembly/fork_insertion/model.pth'
+[33m06:43:22 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:43:27 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:43:32 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:43:37 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:43:42 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:43:47 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:43:52 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+RESULT_JSON {"problem": "fork_insertion", "checkpoint": "/home/ubuntu/play2perfect/pretrained_assembly/fork_insertion/model.pth", "num_envs": 500, "n_first_episodes": 483, "n_unstable_init": 17, "success_rate": 0.9875776767730713, "mean_goal_ratio": 0.9906832575798035, "retract_rate": 0.979296088218689}
+
+===== evaluating plug_insertion =====
+2026-11-13T06:43:57Z [172ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libMaterialXRenderHw.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-13T06:43:57Z [180ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libMaterialXRenderGlsl.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-13T06:43:57Z [186ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.usd.libs-1.0.1+69cbf6ad.lx64.r.cp311/bin/libusd_usdBakeMtlx.so. Error: libXt.so.6: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+2026-11-13T06:43:57Z [295ms] [Error] [omni.ext.plugin] Could not load the dynamic library from /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/extscache/omni.iray.libs-0.0.0+69cbf6ad.lx64.r/bin/iray/libneuray.so. Error: libGLU.so.1: cannot open shared object file: No such file or directory (note that this may be caused by a dependent library)
+cat: '/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor': No such file or directory
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+cat: '/sys/devices/system/cpu/cpu*/cpufreq/scaling_governor': No such file or directory
+[WARN][AppLauncher]: There are no arguments attached to the ArgumentParser object. If you have your own arguments, please load your own arguments before calling the `AppLauncher.add_app_launcher_args` method. This allows the method to check the validity of the arguments and perform checks for argument names.
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaaclab/apps/isaaclab.python.headless.kit
+Loading user config located at: '/home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /home/ubuntu/play2perfect/.venv_isaacsim/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20261113_064356.log
+2026-11-13T06:43:56Z [120ms] [Warning] [omni.usd_config.extension] Enable omni.materialx.libs extension to use MaterialX
+2026-11-13T06:43:57Z [407ms] [Warning] [omni.platforminfo.plugin] failed to open the default display.  Can't verify X Server version.
+2026-11-13T06:43:57Z [614ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-11-13T06:43:57Z [623ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 595.112.07    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA L40S                      | Yes: 0 |     | 46068   MB | 10de      | 0          |
+|     |                                  |        |     |            | 26b9      | 0217ae23.. |
+|     |                                  |        |     |            | 30        |            |
+|=============================================================================================|
+| OS: 24.04.5 LTS (Noble Numbat) ubuntu, Version: 24.04.5, Kernel: 7.0.0-1014-aws
+| Processor: AMD EPYC 7R13 Processor
+| Cores: 4 | Logical Cores: 8
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 63422 | Free Memory: 59893
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-13T06:44:00Z [3,999ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-11-13T06:44:00Z [4,000ms] [Warning] [gpu.foundation.plugin] PCIe link width current (8) and maximum (16) for device 0 don't match.
+[INFO]: Parsing configuration from: isaacsimenvs.tasks.precise_assembly.precise_assembly_env_cfg:PreciseAssemblyEnvCfg
+2026-11-13T06:44:02Z [5,325ms] [Warning] [isaaclab.envs.direct_rl_env] Seed not set for the environment. The environment creation may not be deterministic.
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-11-13_06-44-02.log[0m
+[36m======================================================================================[0m
+
+[33m06:44:02 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : None
+	Physics step-size     : 0.00833333333
+	Rendering step-size   : 0.01666666666
+	Environment step-size : 0.01666666666
+[scene_utils][+0.00s] peg-in-hole setup start num_envs=500
+2026-11-13T06:44:02Z [5,440ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:44:02Z [5,440ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 595.112.07    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA L40S                      | Yes: 0 |     | 46068   MB | 10de      | 0          |
+|     |                                  |        |     |            | 26b9      | 0217ae23.. |
+|     |                                  |        |     |            | 30        |            |
+|=============================================================================================|
+| OS: 24.04.5 LTS (Noble Numbat) ubuntu, Version: 24.04.5, Kernel: 7.0.0-1014-aws
+| Processor: AMD EPYC 7R13 Processor
+| Cores: 4 | Logical Cores: 8
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 63422 | Free Memory: 59632
+| Total Page/Swap (MB): 0 | Free Page/Swap: 0
+|---------------------------------------------------------------------------------------------|
+2026-11-13T06:44:02Z [5,994ms] [Warning] [gpu.foundation.plugin] ECC is enabled on physical device 0
+2026-11-13T06:44:02Z [5,994ms] [Warning] [gpu.foundation.plugin] PCIe link width current (8) and maximum (16) for device 0 don't match.
+2026-11-13T06:44:03Z [6,232ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:44:03Z [6,232ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:44:03Z [6,252ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:44:03Z [6,252ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:44:03Z [6,259ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:44:03Z [6,259ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:44:03Z [6,270ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:44:03Z [6,270ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:44:03Z [6,272ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:44:03Z [6,272ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:44:03Z [6,273ms] [Warning] [carb.windowing-glfw.plugin] GLFW initialization failed.
+2026-11-13T06:44:03Z [6,273ms] [Warning] [carb] Failed to startup plugin carb.windowing-glfw.plugin (interfaces: [carb::windowing::IGLContext v1.0],[carb::windowing::IWindowing v1.5]) (impl: carb.windowing-glfw.plugin)
+2026-11-13T06:44:03Z [6,648ms] [Warning] [omni.graph.visualization.nodes._impl.extension] No Viewport Window to add omni.graph.visualization.nodes-2.1.3 scene to
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] link left_thumb_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_thumb_elastomer
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] link left_thumb_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_thumb_DP
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] link left_index_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_index_elastomer
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] link left_index_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_index_DP
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] link left_middle_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_middle_elastomer
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] link left_middle_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_middle_DP
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] link left_ring_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_ring_elastomer
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] link left_ring_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_ring_DP
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] link left_pinky_fingertip has body properties (mass, inertia, or collisions) and is being merged into left_pinky_elastomer
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] link left_pinky_elastomer has body properties (mass, inertia, or collisions) and is being merged into left_pinky_DP
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] link left_hand_C_MC has body properties (mass, inertia, or collisions) and is being merged into sharpa_mount
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] link sharpa_mount has body properties (mass, inertia, or collisions) and is being merged into iiwa14_link_ee
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] DEPRECATION WARNING: Merging bodies with inertia is deprecated. This will be removed in a future release.
+2026-11-13T06:44:03Z [6,847ms] [Warning] [isaacsim.asset.importer.urdf] link iiwa14_link_ee has body properties (mass, inertia, or collisions) and is being merged into iiwa14_link_7
+[scene_utils][+2.37s] converted object/hole/table URDFs
+[scene_utils][+5.84s] spawned robot/table/hole/object/goalviz
+[scene_utils][+6.13s] registered assets with scene
+[INFO]: Time taken for scene creation : 6.203631 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 500
+	Environment spacing   : 1.2
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : False
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+[INFO]: Time taken for simulation start : 11.804079 seconds
+[INFO]: Completed setting up the environment...
+[scene_utils][+0.05s] applied PhysX material properties
+[PreciseAssemblyEnv] problem=plug_insertion object=usbc_plug goals=2 (prelude=0, tail=2) goal_mode=preInsertAndFinal random_goal_fraction=0.0 insertion_success_tolerance=0.01
+[INFO]: Parsing configuration from: /home/ubuntu/play2perfect/isaacsimenvs/cfg/train/PreciseAssemblySAPG.yaml
+self.seed = 42
+[BasePlayer] Creating regular env:  rlgpu
+{'observation_space': Box(-10.0, 10.0, (140,), float32), 'action_space': Box(-1.0, 1.0, (29,), float32), 'agents': 1, 'value_size': 1}
+build mlp: 1024
+RunningMeanStd:  (1,)
+RunningMeanStd:  (140,)
+=> loading checkpoint '/home/ubuntu/play2perfect/pretrained_assembly/plug_insertion/model.pth'
+[33m06:44:20 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:44:25 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:44:31 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:44:36 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:44:41 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:44:46 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+[33m06:44:51 [rigid_object.py] WARNING: The function 'set_external_force_and_torque' will be deprecated in a future release. Please use 'permanent_wrench_composer.set_forces_and_torques' instead.[0m
+RESULT_JSON {"problem": "plug_insertion", "checkpoint": "/home/ubuntu/play2perfect/pretrained_assembly/plug_insertion/model.pth", "num_envs": 500, "n_first_episodes": 499, "n_unstable_init": 1, "success_rate": 0.8456913828849792, "mean_goal_ratio": 0.8797595500946045, "retract_rate": 0.8456913828849792}
+
+======================================================================================
+problem                        trials  bad_init   success  goal_ratio   retract
+--------------------------------------------------------------------------------------
+tight_insertion                   443        57     97.5%       97.5%     97.5%
+beam_assembly_step1               469        31     97.7%       98.0%     97.7%
+beam_assembly_step2               436        64     91.1%       91.4%     91.1%
+screwing                          496         1     21.2%       50.9%     19.2%
+fork_insertion                    483        17     98.8%       99.1%     97.9%
+plug_insertion                    499         1     84.6%       88.0%     84.6%
+======================================================================================
+trials = valid first episodes; bad_init = discarded unstable-init starts;
+success = first episode reached all subgoals (over valid trials).

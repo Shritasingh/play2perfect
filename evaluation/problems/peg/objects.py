@@ -15,6 +15,11 @@ PEG_NAME_TO_OBJECT = {
         scale=rescale_by_factor((0.25, 0.03, 0.02), factor=25),
         need_vhacd=False,
     ),
+    "pencil": Object(
+        urdf_path=ASSETS_DIR / "pencil" / "pencil.urdf",
+        scale=rescale_by_factor((0.25, 0.02, 0.02), factor=25),
+        need_vhacd=False,
+    ),
 }
 
 NAME_TO_OBJECT.update(PEG_NAME_TO_OBJECT)

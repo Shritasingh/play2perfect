@@ -92,9 +92,26 @@ def run_worker(args) -> int:
             sim_device=args.sim_device,
             sdf=False,
             keep_dr=False,
+        #     extra_overrides={},
+        # )
+        # env = _instantiate_env(args.task, cfg)
             extra_overrides={},
         )
+        # --- custom: hole yaw randomization (Cathy) ---
+        _pa = getattr(cfg, "precise_assembly", None)
+        if _pa is None and isinstance(cfg, dict):
+            _pa = cfg.get("precise_assembly")
+        if isinstance(_pa, dict):
+            _pa["hole_yaw_range_deg"] = float(args.hole_yaw_range_deg)
+        elif _pa is not None and hasattr(_pa, "hole_yaw_range_deg"):
+            _pa.hole_yaw_range_deg = float(args.hole_yaw_range_deg)
+        elif hasattr(cfg, "hole_yaw_range_deg"):
+            cfg.hole_yaw_range_deg = float(args.hole_yaw_range_deg)
+        else:
+            raise RuntimeError("hole_yaw_range_deg not found on cfg")
+        print(f"[custom] hole_yaw_range_deg = {args.hole_yaw_range_deg}", flush=True)
         env = _instantiate_env(args.task, cfg)
+        
 
         agent_cfg = _configure_agent(
             args.task,
@@ -218,6 +235,7 @@ def run_driver(args) -> int:
         ]
         if args.insertion_success_tolerance is not None:
             cmd += ["--insertion-success-tolerance", str(args.insertion_success_tolerance)]
+        cmd += ["--hole-yaw-range-deg", str(args.hole_yaw_range_deg)]
         env = os.environ.copy()
         env.setdefault("OMNI_KIT_ACCEPT_EULA", "YES")
         print(f"\n===== evaluating {problem} =====", flush=True)
@@ -266,6 +284,7 @@ def _build_parser() -> argparse.ArgumentParser:
     p.add_argument("--insertion-success-tolerance", type=float, default=None,
                    help="default: the problem's own (0.01; screwing 0.005)")
     p.add_argument("--retract-success-tolerance", type=float, default=0.005)
+    p.add_argument("--hole-yaw-range-deg", type=float, default=0.0)
     p.add_argument("--rl-device", default="cuda:0")
     p.add_argument("--sim-device", default="cuda:0")
     p.add_argument("--worker", action="store_true", help=argparse.SUPPRESS)

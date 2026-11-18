@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- Pencil-like peg: cylinder, length 250 mm, diameter 20 mm, mass matched to lpeg_matchedmass (57.8 g).
+     Long axis along +X (same convention as lpeg main bar). Cylinder inertia:
+     Ixx = 1/2 m r^2 = 2.89e-6 ; Iyy = Izz = m(3r^2 + L^2)/12 = 3.025e-4 -->
+<robot name="pencil">
+  <material name="pencil_yellow">
+    <color rgba="0.95 0.80 0.10 1.0"/>
+  </material>
+  <link name="pencil">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 1.5707963 0"/>
+      <geometry><cylinder radius="0.010" length="0.250"/></geometry>
+      <material name="pencil_yellow"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 1.5707963 0"/>
+      <geometry><cylinder radius="0.010" length="0.250"/></geometry>
+    </collision>
+    <inertial>
+      <mass value="0.057800"/>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <inertia ixx="2.89e-06" ixy="0" ixz="0" iyy="3.025e-04" iyz="0" izz="3.025e-04"/>
+    </inertial>
+  </link>
+</robot>

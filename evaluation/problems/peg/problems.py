@@ -84,6 +84,7 @@ def _register_all() -> None:
             ("peg_matchedmass", "peg_matchedmass"),
             ("Lpeg", "lpeg"),
             ("Lpeg_matchedmass", "lpeg_matchedmass"),
+            ("pencil", "pencil"),
         ):
             name = f"{prefix}.{tag}"
             PROBLEM_REGISTRY[name] = Problem(
